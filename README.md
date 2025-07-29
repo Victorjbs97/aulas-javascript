@@ -10,3 +10,4 @@ Introdução ao JavaScript para programação WEB
 - Front-End: depende do navegador, depende de página HTML;
 - Back-End: depende da plataforma node.js, depende de linha de comando;
 - JS pode ser usado também para criação de aplicações web, usando tecnologias com React, Angular, React Native etc.
+- commit test

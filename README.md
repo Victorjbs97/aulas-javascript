@@ -2,7 +2,7 @@
 
 Introdução ao JavaScript para programação WEB
 
-## Sobre a linguagem
+## Sobre a linguag
 
 - JavaScript **não é**  java!;
 - JavaScript = js = EcmaScript;

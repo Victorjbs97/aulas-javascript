@@ -1,3 +1,6 @@
+//Habilitando o modo estrito
+'use strict';
+
 /*
     EXERCICIOS 
 

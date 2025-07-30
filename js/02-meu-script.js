@@ -15,8 +15,9 @@ let uc = 2;
 
 // 2
 
-let competencia = "estamos na UC"+uc+" estudando Front-end com javaScript";
+let competencia = "Front-end com javaScript";
+
 
 // 3 
 
-console.log(competencia);
+console.log(`estamos na UC${uc} estudando ${competencia}.`);

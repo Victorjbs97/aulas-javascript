@@ -1,1 +1,1 @@
-'use restrict';
+'use strict';

@@ -21,3 +21,13 @@ let competencia = "Front-end com javaScript";
 // 3 
 
 console.log(`estamos na UC${uc} estudando ${competencia}.`);
+
+///////////////////////////////////////////////////////////////////////////////////
+
+// Usando aspas no texto de saída. aspas simples como comando e simmples como texto, o inverso támbem funiona.
+
+console.log('Gosto "muito" de paçoca!');
+
+//  Escapando as aspas como texto, escape, barra invertida \
+
+console.log("Gosto \"muito\" de paçoca!");

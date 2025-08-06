@@ -12,4 +12,17 @@ console.log(coisas[4]);
 console.log(coisas[1]);
 
 
+/*
+    ////////////Exercícios
 
+1))) Crie um array contendo nomes de 7 coisas que você gosta.
+
+2))) em seguida, mostre no console uma frase personalizada indicando o segundo, o quinto e o sétimo do array. Use concatenação e/ou templete string.
+*/
+
+
+let animais = ["Gato", "Cão","Pangolim","Jaguatirica","Ariranha","Tigre","Foca"];
+
+console.log(`O ${animais[1]} é um animal domesticado muito comum.
+A ${animais[4]} é o único animal da selva amazônica que pode predar a onça- pintanda.
+A ${animais[6]} diverte.`);

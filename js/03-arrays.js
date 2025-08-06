@@ -26,3 +26,22 @@ let animais = ["Gato", "Cão","Pangolim","Jaguatirica","Ariranha","Tigre","Foca"
 console.log(`O ${animais[1]} é um animal domesticado muito comum.
 A ${animais[4]} é o único animal da selva amazônica que pode predar a onça- pintanda.
 A ${animais[6]} diverte.`);
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+//                        Matriz
+
+let tecnologia = [
+    ["HTML","CSS","JS"],
+    ["Figma","Photoshop"],
+    ["PHP","NodeJs","SQL","Express"]
+];
+
+// console.log(tecnologia);
+
+console.log(tecnologia[0][2]);
+console.log(tecnologia[1][0]);
+console.log(tecnologia[2][3]);
+

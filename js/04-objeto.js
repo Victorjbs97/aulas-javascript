@@ -31,3 +31,23 @@ const livros = {
 console.log(livros);
 console.log(livros.volume[1]);
 
+const livro = [
+    {
+        titulo:"O assassinato no expresso do oriente",
+        autor:"Agatha Christie"
+    },
+    {
+        titulo:"Crepúsculo",
+        autor:"Stephanie Myers"
+    },
+    {
+        titulo:"A origem das especies",
+        autor:"Charles Darwin"
+    }
+];
+console.clear();
+console.log(livro[2].autor);
+
+
+
+

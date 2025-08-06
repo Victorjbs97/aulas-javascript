@@ -45,8 +45,38 @@ const livro = [
         autor:"Charles Darwin"
     }
 ];
-console.clear();
 console.log(livro[2].autor);
+console.clear();
+
+/* Exercícios
+
+1. Crie um objeto chamado "aluno" contendo os seguintes dados:
+
+- Nome Completo
+- Data de Nascimento
+- (Use ARRAY) Lista de telefones (fixo e celular)
+- (DESAFIO: use um OBJETO nesta propriedade) Endereço contendo (separadamente):
+  - rua
+  - número
+  - bairro
+
+2. Mostre no console o nome do aluno, o telefone celular e o bairro em que mora. */
+
+const aluno={
+    nomeCompleto: "Harry Poter",
+    dataNscimento:"05/01/1985",
+    listaTelefones:[    
+        "(55) 1464-6585",
+        "(55) 91234-5678"
+    ],
+    endereco:{
+        rua:"Rua da Casa dos poters",
+        numero:"555",
+        bairo:"Jardim dos magos"
+    }
+}
+
+console.log(`O aluno ${aluno.nomeCompleto} tem o número de telefone celular ${aluno.listaTelefones[1]} e mora no bairro ${aluno.endereco.bairo}.`);
 
 
 

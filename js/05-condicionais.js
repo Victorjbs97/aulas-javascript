@@ -44,7 +44,7 @@ if (idade<18) {
     Caso contrário, mostre "reprovado".
  */
 
-    let nota1=8,nota2=6,media=(nota1+nota2)/2;
+    let nota1=0,nota2=1,media=(nota1+nota2)/2;
 
     if(media>=7){
         console.log(`Aluno aprovado! 😊 nota ${media}!!`);
@@ -52,3 +52,28 @@ if (idade<18) {
         console.log(`Aluno reprovado! 😢 nota ${media}!!`);
     }
     
+
+    // Condicional cadeado
+
+    if(media >9){
+        console.log("ÓTIMO");
+    } else if(media>7){
+        console.log("BOM!");
+    }else if(media>5){
+        console.log("RUIM!");
+    }else{
+        console.log("PÉSSIMO!");
+
+    }
+
+/* 
+    *****************************************************************************************
+    *****************************************************************************************
+                    Exemplo 4
+
+    Condicional composta com operador ternário
+*/
+
+    console.log("\nExemplo 4");
+    let situacao = idade>=18 ? "maior" : "menor";
+    console.log(situacao);

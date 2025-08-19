@@ -25,10 +25,10 @@ if(idade>=18&&temCarta===true){
     Diferença entre == ou === 
     com dois ==, se comprar o valor não importa o tipo exemplo: 10 inteiro e '10' string, a comparação é positiva
     com três ===, se compara o valor e o tipo. exemplo: 10 inteiro e '10' string, a comparação é false
-
-    0 . 0 = 0                     0 + 0 = 0             
-    0 . 1 = 0                     0 + 1 = 1
-    1 . 0 = 0                     1 + 0 = 1
+                                    XAND
+    0 . 0 = 0                     0 + 0 = 1             
+    0 . 1 = 0                     0 + 1 = 0
+    1 . 0 = 0                     1 + 0 = 0
     1 . 1 = 1                     1 + 1 = 1
 
     ordem de precedencia
@@ -38,13 +38,25 @@ if(idade>=18&&temCarta===true){
 */
 
 
-console.log("\n\nExemplo ||")
-let feriado = false, fimdeSemana = false;
+    console.log("\n\nExemplo ||")
+    let feriado = false, fimdeSemana = false;
 
-if (feriado || fimdeSemana) {
-    console.log("\nNão tem aula!");
-    
-} else {
-    console.log("\nTem aula!");
-    
-}
+    if (feriado || fimdeSemana) {
+        console.log("\nNão tem aula!");
+        
+    } else {
+        console.log("\nTem aula!");
+        
+    }
+
+
+    /* ! -> Inverte a logica */
+
+    let sextaFeiraNegra = false;
+
+    if(!sextaFeiraNegra){
+        console.log("Preços normais..");
+    }else{
+        console.log("Preços com desconto...");
+        
+    }

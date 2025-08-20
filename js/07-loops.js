@@ -73,4 +73,75 @@ for(const banda of bandas){
 
 
     
+console.log("\n----------------Loop e objeto----------------\n");
+
+const pessoa = {
+    nome:"Fulano de Tal",
+    idade:40,
+    cidade:"São Paulo",
+    Estado:"SP"
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for/in
+
+for(const prop in pessoa){
+    console.log(pessoa[prop]);
+}
     
+
+console.clear();
+
+
+
+/*
+
+Exercício: Loop com array de objetos
+Geral Orientações:
+ 
+1. Faça um array chamado "clientes" contendo 3 objetos.
+ 
+Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e uma propriedade "nome" (com os nomes dos clientes: "Dio", "Ozzy" e "Ian").
+ 
+2. Faça um loop (qualquer um dos que vimos) e mostre no console os dados de cada cliente conforme a seguir:
+ 
+- Cliente: Dio, id: 1
+
+- Cliente: Ozzy, id: 2
+
+- Cliente: Ian, id: 3
+ 
+
+*/
+
+const clientes =[
+    {
+        nome:"Dio",
+        id:1
+    },
+    {
+        nome:"Ozzy",
+        id:2
+    },
+    {
+        nome:"Ian",
+        id:3
+    }
+]
+
+for(const cliente of clientes){
+    //console.log("Cliente: "+cliente.nome+", id: "+ cliente.id);
+    console.log(`- Cliente: ${cliente.nome}, id: ${cliente.id}`);
+}
+console.log("\n---------------For---------------------\n");
+for(let i=0;i<clientes.length;i++){
+    console.log(`- Cliente: ${clientes[i].nome}, id: ${clientes[i].id}`);
+}
+
+console.log("\n----------------While--------------------\n");
+
+let k=0;
+while(k<clientes.length){
+    console.log(`- Cliente: ${clientes[k].nome}, id: ${clientes[k].id}`);
+    k++;
+}

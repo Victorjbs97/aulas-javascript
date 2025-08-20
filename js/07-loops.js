@@ -116,16 +116,16 @@ Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e
 
 const clientes =[
     {
-        nome:"Dio",
-        id:1
+        id:1,
+        nome:"Dio"
     },
     {
-        nome:"Ozzy",
-        id:2
+        id:2,
+        nome:"Ozzy"
     },
     {
-        nome:"Ian",
-        id:3
+        id:3,
+        nome:"Ian"
     }
 ]
 

@@ -22,8 +22,19 @@
         }
     }
 
+    console.log("Loop for");
+
     for(let j=0;j<=5;j++){
         console.log("Contador For: "+j);
-        
-        
+        if(j==5){
+            console.log("\n");
+        }
     }
+
+    console.log("Loop regressivo");
+    
+    for(let j=10;j>=0;j--){
+        console.log("regressivo: "+j);
+    }
+
+    

@@ -24,17 +24,39 @@
 
     console.log("Loop for");
 
-    for(let j=0;j<=5;j++){
+    for(let j=0;j<=3;j++){
         console.log("Contador For: "+j);
-        if(j==5){
+        if(j==3){
             console.log("\n");
         }
     }
 
     console.log("Loop regressivo");
     
-    for(let j=10;j>=0;j--){
+    for(let j=3;j>=0;j--){
         console.log("regressivo: "+j);
     }
 
+    console.log("\nLoops e Array");
+
+    const bandas = [ 
+    "Led Zeppelin",
+    "Nirvana",
+    "Pink Floyd",
+    "Red Hot Chili Peppers",
+    "Foo Fighters",
+    "Metallica",
+    "AC/DC",
+    "Pearl Jam",
+    "The Rolling Stones",
+    "Black Sabbath"
+];
+
+for(let j=0;j<=bandas.length;j++){
+    console.log(`Banda: ${bandas[j]}`);
+    
+}
+
+
+    
     

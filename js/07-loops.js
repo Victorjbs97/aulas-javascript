@@ -52,9 +52,23 @@
     "Black Sabbath"
 ];
 
-for(let j=0;j<=bandas.length;j++){
-    console.log(`Banda: ${bandas[j]}`);
+for(let j=0;j<bandas.length;j++){
+    console.log(`Banda ${j+1}: ${bandas[j]}`);
     
+}
+
+//Loop for/of (Exclusivo JavaScript)
+
+/*
+    
+    Usamos uma var/const (no caso,banda) para acessar cada elemento do array (no caso, bandas)
+
+ */
+
+console.log("\n----------------Loop for/of----------------\n");
+
+for(const banda of bandas){
+    console.log(banda);
 }
 
 

@@ -9,3 +9,12 @@
         Normalmente, os loops são controlados através de uma variável contadora
      */    
     
+
+    console.log("Estrutura While\n");   
+
+    let contador=1;
+
+    while(contador<=5 ){
+        console.log("Valor do contador: "+contador);
+        contador++;
+    }

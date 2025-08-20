@@ -12,9 +12,18 @@
 
     console.log("Estrutura While\n");   
 
-    let contador=1;
+    let i=0;
 
-    while(contador<=5 ){
-        console.log("Valor do contador: "+contador);
-        contador++;
+    while(i<=2 ){
+        console.log("Valor do contador: "+i);
+        i++;
+        if(i==3){
+            console.log("\n")
+        }
+    }
+
+    for(let j=0;j<=5;j++){
+        console.log("Contador For: "+j);
+        
+        
     }

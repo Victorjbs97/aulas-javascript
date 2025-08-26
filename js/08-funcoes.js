@@ -68,5 +68,48 @@
 
 
     /*
-         
+    
+
+    
      */
+
+    console.log("\n Exemplo 6: Simplificando com arrow function");
+
+    //Sintaxe declarada/nomeada
+
+ /*    function somar (valor1,valor2) {
+        return valor1 + valor2;
+    } */
+
+
+    // Arrow Function versão 2, com retorno implícito
+    const somar = (valor1,valor2)=>valor1+valor2;
+
+    console.log(somar(150,500));
+
+    console.log("\nExemplo 7: Formatando valor monetário");
+
+    let preco = 2000, desconto = preco*0.10, precoFinal=preco-desconto;
+
+    function formatarMoeda(valor){
+        return new Intl.NumberFormat("pt-br",{style:"currency",currency:"BRL"}).format(valor);
+    }
+
+    console.log("Preço original: "+formatarMoeda(preco));
+    console.log("Desconto: " +formatarMoeda(desconto));
+    console.log("Preço final: "+formatarMoeda(precoFinal));
+    
+
+    //Exemplo : usamdo recursos da classe Intl(Internacionalização)
+
+    /* const exemploFormatacao = new Intl.NumberFormat("pt-br",{style:"currency",currency:"BRL"}).format(preco);
+    console.log(exemploFormatacao); */
+
+    console.log("\n\n");
+    
+    const forMoeda = (valor)=> new Intl.NumberFormat("pt-br",{style:"currency",currency:"BRL"}).format(valor);
+
+    console.log("Preço original: "+forMoeda(preco));
+    console.log("Preço original: "+forMoeda(desconto));
+    console.log("Preço original: "+forMoeda(precoFinal));
+

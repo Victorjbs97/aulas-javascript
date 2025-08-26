@@ -51,10 +51,22 @@
 
     */
 
-        saudacao("João");
-        saudacao();
+    saudacao("João");
+    saudacao();
 
 
     function saudacao(nome = "Visitante"){
         console.log("Olá, "+nome+"!");
     }
+
+    function multiplicador(valor1,valor2){
+        return valor1*valor2;
+        
+    }
+
+    console.log('resultado: '+multiplicador(10,10));
+
+
+    /*
+         
+     */

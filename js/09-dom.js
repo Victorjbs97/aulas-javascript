@@ -51,6 +51,9 @@ const titulo = document.querySelector("h1");
 titulo.addEventListener("mouseover", function(){
     titulo.textContent="Praticando Eventos!";
     titulo.classList.add("praticandoH1");
+
+    //Solução 2 : usando style inline
+    //titulo.style.textAlign = "center";
 });
 
 //    3) Faça também um evento que de click para que, quando clicar na palavra "referências", o texto do h1 volte para a palavra "Eventos" e o alinhamento volte a ficar à esquerda(Padrão). 
@@ -60,3 +63,22 @@ refVoltar.addEventListener("mousedown",function(){
     titulo.classList.remove("praticandoH1");
     titulo.textContent = "Eventos";
 });
+
+
+// Exercicio 3
+
+const ativarModoNoturno = document.querySelector("#noturno");
+let verificarModoNoturno = true;
+
+ativarModoNoturno.addEventListener("click", function(){
+    //alert("Ok, botão acionado!!!!");
+    pagina.classList.toggle("modoNoturno");
+    console.log(verificarModoNoturno);
+});
+
+
+//Desafios
+
+//1) Faça a mudança de cores acontecer gradualmente (Use o transition!)
+
+//2) Se o modo noturno estiver avitado, ou seja se classe modo noturno estiver aplicado a pagina, faça o texto aparecer "Desativar", caso contrario "Ativar".

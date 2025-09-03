@@ -118,3 +118,32 @@ ativarModoNoturno.addEventListener("click", function(){
 //1) Faça a mudança de cores acontecer gradualmente (Use o transition!)
 
 //2) Se o modo noturno estiver avitado, ou seja se classe modo noturno estiver aplicado a pagina, faça o texto aparecer "Desativar", caso contrario "Ativar".
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+                    //////////////  Exemplo  2 //////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+const janelaModal = document.querySelector("#janelinha");
+
+
+//Essa função lida com evento, monitorado pelo Listener do Document.
+
+//Se a posição de Y for maior do que Zero, ou seja, Acima do topo da páginado documento, Fazemos a janelinha ser exibida (showModal), e dasativamos o Listener e a própeia função. garantido que essa rotina funcione somente uma vez.
+function gerenciarJanela (event){
+    if(event.clientY<0){ 
+        janelaModal.showModal();
+        document.removeEventListener("mouseout",gerenciarJanela);
+    }
+}
+//no documento executa a a função gerenciarJanela.
+document.addEventListener("mouseout",gerenciarJanela);
+
+
+//Selecionamos o botão existente dento da janelaModal(Já selecionada antes).
+const botaoFechar = janelaModal.querySelector("button");
+//Quando aconter o acionamento/clique no botão fechar, fazemos o janelaModal fechar(Close);
+botaoFechar.addEventListener("click",function(){
+    janelaModal.close();
+});

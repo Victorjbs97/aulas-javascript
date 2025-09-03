@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    .destaque{
-      background-color: rgb(7, 7, 6);
-      color: rgb(255, 8, 0);
-      text-align: center;
-      font-size: 2em;
-      font-weight: 600;
-      padding: 10px;
-      border-radius: 50%;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .destaque{
+            background-color: rgb(7, 7, 6);
+            color: rgb(255, 8, 0);
+            text-align: center;
+            font-size: 2em;
+            font-weight: 600;
+            padding: 10px;
+            border-radius: 50%;
+            }
 
-    .praticandoH1{
-        text-align: center;
-        color: darkorange;
-    }
+            .praticandoH1{
+                text-align: center;
+                color: darkorange;
+            }
 
-    .modoNoturno{
-        transition: 1s;
-        background: #001c2e;
-        color: white;
-    }
-    .modoNoturno ul li a{
-        transition: 1s;
-        color: rgb(156, 156, 156);
-        text-decoration: none;
-    }
+            .modoNoturno{
+                transition: 1s;
+                background: #001c2e;
+                color: white;
+            }
+            .modoNoturno ul li a{
+                transition: 1s;
+                color: rgb(156, 156, 156);
+                text-decoration: none;
+            }
 
-    #noturno:hover{
-        cursor: pointer;
-    }
-    h2:last-of-type{
-        cursor: pointer;
-    }
+            #noturno:hover{
+                cursor: pointer;
+            }
+            h2:last-of-type{
+                cursor: pointer;
+            }
 
-    ul li a{
-        text-decoration: none;
-        color: rgb(185, 0, 0);
-        font-weight: 800;
-    }
+            ul li a{
+                text-decoration: none;
+                color: rgb(185, 0, 0);
+                font-weight: 800;
+            }
+
+            #janelinha{
+                background: #b0eeb8;
+                text-align: center;
+                border-style: inset;
+                border-width:20px ;
+                box-shadow: 20px 20px 20px;
+                border-radius: 20%;
+            }
+
+        </style>
+        <title>JavaScript - Eventos</title>
+    </head>
+
+    <body>
+    <h1>Eventos</h1>
+    <p>Eventos são interações/fenômenos que ocorrem na página. Ao monitorar e manipular eventos, o JS pode reagir ao que
+        acontece.</p>
+    <hr>
+
+    <h2 id="exemplo01">Exemplo 01: Detectando eventos</h2>
+    <p id="mensagem01"></p>
+
+    <hr>
+
+    <h2>Exemplo 02: Detectando "saída" do site</h2>
+    <p id="mensagem02"></p>
+
+    <!-- JANELA MOdAL -->
+     <dialog id="janelinha">
+
+         <h3>Poxa, já vai embora?</h3>
+         <p>😢😢😢😢😢😢💔💔💔💔💔💔</p>
+         <button>FECHAR</button>
+        
+    </dialog>
 
 
-  </style>
-  <title>JavaScript - Eventos</title>
 
-</head>
+    <hr>
 
-<body>
-  <h1>Eventos</h1>
-  <p>Eventos são interações/fenômenos que ocorrem na página. Ao monitorar e manipular eventos, o JS pode reagir ao que
-    acontece.</p>
-  <hr>
+    <h2>Exemplo 03: Modo Noturno</h2>
+    <button id="noturno">Ativar</button>
 
-  <h2 id="exemplo01">Exemplo 01: Detectando eventos</h2>
-  <p id="mensagem01"></p>
-
-  <hr>
-
-  <h2>Exemplo 02: Detectando "saída" do site</h2>
-  <p id="mensagem02"></p>
-
-
-  <hr>
-
-  <h2>Exemplo 03: Modo Noturno</h2>
-  <button id="noturno">Ativar</button>
-
-  <hr>
+    <hr>
 
 
 
-  <h2>Referências</h2>
-  <ul>
-    <li><b>Eloquent JavaScript:</b>
-      <a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/14-manipulando-eventos.md"
-        target="_blank">
-        Manipulando Eventos</a>
-    </li>
-    <li><b>MDN:</b>
-      <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events"
-        target="_blank">
-        Introdução a eventos
-      </a>
-    </li>
-  </ul>
+    <h2>Referências</h2>
+    <ul>
+        <li><b>Eloquent JavaScript:</b>
+        <a href="https://github.com/braziljs/eloquente-javascript/blob/master/chapters/14-manipulando-eventos.md"
+            target="_blank">
+            Manipulando Eventos</a>
+        </li>
+        <li><b>MDN:</b>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Elementos_construtivos/Events"
+            target="_blank">
+            Introdução a eventos
+        </a>
+        </li>
+    </ul>
 
-  <script src="js/09-dom.js"></script>
+    <script src="js/09-dom.js"></script>
 
-</body>
+    </body>
 
 </html>

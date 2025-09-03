@@ -68,13 +68,49 @@ refVoltar.addEventListener("mousedown",function(){
 // Exercicio 3
 
 const ativarModoNoturno = document.querySelector("#noturno");
+/* 
 let verificarModoNoturno = true;
 
 ativarModoNoturno.addEventListener("click", function(){
     //alert("Ok, botão acionado!!!!");
-    pagina.classList.toggle("modoNoturno");
-    console.log(verificarModoNoturno);
+    if(verificarModoNoturno){
+        pagina.classList.add("modoNoturno");
+        pagina.classList.remove("modoClaro");
+        verificarModoNoturno = false;
+        ativarModoNoturno.textContent = "Desativar";
+    }else{
+        verificarModoNoturno = true;
+        pagina.classList.add("modoClaro");
+        pagina.classList.remove("modoNoturno");
+        ativarModoNoturno.textContent = "Ativar"; 
+    }
+
 });
+ */
+
+ativarModoNoturno.addEventListener("click", function(){
+    pagina.classList.toggle("modoNoturno");
+    pagina.style.transition = "0.5s";
+    if(pagina.classList.contains("modoNoturno")){   
+        ativarModoNoturno.textContent="Desativar";
+    }else{
+        ativarModoNoturno.textContent="Ativar";
+    }
+})
+
+
+
+
+
+
+/*
+const ativarModoNoturno = document.querySelector("#noturno");
+let verificarModoNoturno = true;
+
+ativarModoNoturno.addEventListener("click", function(){
+    pagina.classList.toggle("modoNoturno");
+});
+ */
 
 
 //Desafios
